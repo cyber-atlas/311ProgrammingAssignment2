@@ -28,16 +28,19 @@ public class WGraph2 {
     private int numEdges;
 
 
-    Pair<String, Integer> edge;
+//    Pair<String, Integer> edge;
 
-    Hashtable<String, Integer> hash;
+    private Hashtable<String, Integer> hash;
 
 
 
     //Making a Hashset to hold the Edges
-    HashSet<Edge> edgeSet;
+    private HashSet<Edge> edgeSet;
     //Making a Hashmap of linked lists to hold the adjacency list of the graph
-    HashMap<String, ArrayList<String>> graphMap;
+    protected HashMap<String, ArrayList<String>> graphMap;
+
+    //Making a HashTable to hold the edges...
+    protected Hashtable<String, Edge> edgeTable;
 
 
     /**
@@ -50,29 +53,25 @@ public class WGraph2 {
     }
 
 
-    private void parseFile() throws FileNotFoundException, URISyntaxException {
-//        fileIn  = new FileReader(fileName);
-         //Initalize the hashmap and hashset
-        edgeSet = new HashSet<Edge>();
-        graphMap = new HashMap<String, ArrayList<String>>();
-        URL path = ClassLoader.getSystemResource(fileName);
-        File f  = new File(fileName);
-        Scanner s = new Scanner(f);
+    public void parseFile() throws FileNotFoundException, URISyntaxException {
         //Initalize the hashmap and hashset
         edgeSet = new HashSet<Edge>();
         graphMap = new HashMap<String, ArrayList<String>>();
+        File f  = new File(fileName);
+        Scanner s = new Scanner(f);
+        //Initalize the hashmap that holds the graph adjacency list
+        graphMap = new HashMap<String, ArrayList<String>>();
+        //Try to have a hashTable of edges, the key would be the edgename, the value would be the edge object
+        edgeTable = new Hashtable<String, Edge>();
+
         //The first line is going to be the number of vertices in the graph
         numVertices = s.nextInt();
         System.out.println(numVertices);
         //The second is going to be the number of edges in the graph
         numEdges = s.nextInt();
         System.out.println(numEdges);
-        System.out.println(String.valueOf(numVertices)+String.valueOf(numEdges));
 
         //So now we know that we can get the input properly and that we ignore the new line character
-
-        //Getting the source
-
         //A scanner should only have 5 ints on the line seperated by spaces
         while (s.hasNextLine()){
             //Make the source vertex
@@ -87,41 +86,29 @@ public class WGraph2 {
             String sourceXYString  = String.valueOf(sourceX) + String.valueOf(sourceY);
             String destXYString = String.valueOf(destX) + String.valueOf(destY);
 
-            //TODO store the edge
-            Edge tempEdge = new Edge(sourceXYString, destXYString, weight);
+            System.out.println("source: " + sourceXYString + " dest " + destXYString + " weight " + weight);
 
-            //Adds the temp edge to the hashset
-            edgeSet.add(tempEdge);
+            //Let's try this again adding it to a hashtable with the full edgename as the key, new edge as value
+            edgeTable.put((sourceXYString+destXYString), new Edge(sourceXYString, destXYString, weight));
 
-            //TODO create the hashmap of adjacies
-            //TODO figure out another hashmap contstructor thing
-
-            //TODO why is this not working
             //If this entry in the hashmap does not exist, add it and initialize the arraylist
             if (!(graphMap.containsKey(sourceXYString))){
-                graphMap.put(sourceXYString, new ArrayList<String>);
+                graphMap.put(sourceXYString, new ArrayList<String>());
             }
 
             //Gets the key of the sourceXY string and adds the destination string to the arraylist of children
             graphMap.get(sourceXYString).add(destXYString);
-
-
-
-
         }
-
-        //TODO get the next line
-        //TODO Parse the ints from the string/line
-        //
     }
 
-    public static void main(String[] args) throws FileNotFoundException, URISyntaxException {
+    //TODO
+    //Given vertices u and v, ﬁnd the shortest path to from u to v.
+    
+    public ArrayList<Integer> V2V(int ux, int uy, int vx, int vy){
 
-        System.out.println("Hello World!");
-        WGraph2 g = new WGraph2("test2.txt");
-//        WGraph g = new WGraph("C:\\Users\\ruski\\Documents\\ProgrammingAssignment2\\Part1\\src\\GraphStuff\\test2.txt");
-        g.parseFile();
+        ArrayList<Integer> returnList = new ArrayList<Integer>();
 
+        return returnList;
     }
 
 

@@ -88,7 +88,7 @@ public class WGraph {
             //TODO create the hashmap of adjacies
             //TODO figure out another hashmap contstructor thing
 //            graphMap(sourceXYString, so,
-                    (String.valueOf(sourceX) + String.valueOf(sourceY)));
+//                    (String.valueOf(sourceX) + String.valueOf(sourceY)));
 
 
 
