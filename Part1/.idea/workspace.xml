@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15fc17f6-9c0d-4f44-8da1-0b17673cceed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10x10Input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphStuff/GraphTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphStuff/ImageProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphStuff/WGraphYussef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphStuff/image.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphStuff/readme.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Part1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphStuff/JunitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphStuff/JunitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphStuff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphStuff/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GraphStuff/WGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphStuff/WGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphStuff/WGraph2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphStuff/WGraph_old.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,8 +93,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/GraphStuff/WGraph.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="264" column="44" selection-start-line="264" selection-start-column="44" selection-end-line="264" selection-end-column="44" />
+                <state relative-caret-position="272">
+                  <caret line="263" column="37" selection-start-line="263" selection-start-column="37" selection-end-line="263" selection-end-column="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -242,7 +226,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542368242585" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542372637623" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -418,6 +402,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49828178" visible="true" weight="0.16426116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -614,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphStuff/WGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="264" column="44" selection-start-line="264" selection-start-column="44" selection-end-line="264" selection-end-column="44" />
+        <state relative-caret-position="272">
+          <caret line="263" column="37" selection-start-line="263" selection-start-column="37" selection-end-line="263" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

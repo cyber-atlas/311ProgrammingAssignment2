@@ -261,7 +261,7 @@ import java.util.*;
 //                returnList.add(Integer.parseInt(s));
 //            }
 
-            //Since they get rerversed later, adding them in reverse order
+            //Since they get reversed later, adding them in reverse order
             for(int i = tmpList.length-1; i>=0; i--){
                 String s = tmpList[i];
                 System.out.println(s);
