@@ -287,7 +287,7 @@ public class ImageProcessor
         g.writeReduced(1, "imageCut.txt");
 
         ImageProcessor g1 = new ImageProcessor("10x10Input.txt");
-        g1.writeReduced(2,"testing");
+        g1.writeReduced(9,"testing");
         System.out.println(g1.getImportance());
     }
 }

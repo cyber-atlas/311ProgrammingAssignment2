@@ -8,7 +8,8 @@ public class Edge {
     private int dest;
     */
 
-    private int weight;
+
+    public int weight;
     //Save the coordinates as a string
     private String sourceNode;
     private String destNode;
