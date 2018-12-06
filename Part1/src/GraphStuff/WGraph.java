@@ -1,14 +1,9 @@
 package GraphStuff;
 
-/**
- * TODO Let's try this again without sipping dumbfuck juice
- */
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.*;
 
 //public class WGraph2 {
@@ -19,7 +14,6 @@ import java.util.*;
     //The name of the file
     public String fileName;
 
-
     //The file we are reading in
     private FileReader fileIn;
 
@@ -28,22 +22,14 @@ import java.util.*;
     //private int to hold the number of edges
     private int numEdges;
 
-
-//    Pair<String, Integer> edge;
-
     private Hashtable<String, Integer> hash;
 
 
 
-    //Making a Hashset to hold the Edges
-//    private HashSet<Edge> edgeSet;
     //Making a Hashmap of linked lists to hold the adjacency list of the graph
     protected HashMap<String, ArrayList<String>> graphMap;
-
     //Making a HashTable to hold the edges...
     protected Hashtable<String, Edge> edgeTable;
-
-
     //Hashset to hold whether or not we visited a node
     protected HashSet<String> visitedHashSet;
     //Hashmap to hold distances
@@ -57,7 +43,6 @@ import java.util.*;
      * Constructor for WGraph
      * @param FName the filename of the file in the same directory
      */
-//    public WGraph2(String FName){
     public WGraph(String FName){
         //Saves the filename of the file
         fileName = FName;
@@ -67,7 +52,6 @@ import java.util.*;
 
     public void parseFile() {
         //Initalize the hashmap and hashset
-//        edgeSet = new HashSet<Edge>();
         graphMap = new HashMap<String, ArrayList<String>>();
         File f  = new File(fileName);
         Scanner s = null;
@@ -83,10 +67,10 @@ import java.util.*;
 
         //The first line is going to be the number of vertices in the graph
         numVertices = s.nextInt();
-        System.out.println(numVertices);
+//        System.out.println(numVertices);
         //The second is going to be the number of edges in the graph
         numEdges = s.nextInt();
-        System.out.println(numEdges);
+//        System.out.println(numEdges);
 
 
         //So now we know that we can get the input properly and that we ignore the new line character
@@ -108,7 +92,7 @@ import java.util.*;
             vertexList.add(sourceXYString);
             vertexList.add(destXYString);
 
-            System.out.println("source: " + sourceXYString + " dest " + destXYString + " weight " + weight);
+//            System.out.println("source: " + sourceXYString + " dest " + destXYString + " weight " + weight);
 
             //Let's try this again adding it to a hashtable with the full edgename as the key, new edge as value
             edgeTable.put((sourceXYString+","+destXYString), new Edge(sourceXYString, destXYString, weight));
@@ -140,11 +124,9 @@ import java.util.*;
 
         //Either the source or the dest node aren't in our graph, so no shortest path
         if(!graphMap.containsKey(sourcenode) || !graphMap.containsKey(destnode)){
-//        	ArrayList<Integer>
             return new ArrayList<Integer>() ;
         }
 
-//        ArrayList<Integer> returnList = new ArrayList<Integer>();
 
        visitedHashSet = new HashSet<>();
         //Hashmap to hold distances
@@ -179,15 +161,11 @@ import java.util.*;
 
         while(!(priorityQueue.isEmpty())){
             //pops the lowest vertex off the priority queue
-//           String tempNode = (String)priorityQueue.poll();
             tempNode = (String)priorityQueue.poll();
-//           System.out.println( "tempNode" + tempNode);
-//           System.out.println("tempnode " + tempNode + " dest " + destnode );
 
 	        //TODO find why this works and my initial idea does not
             if (tempNode.equals(destnode)){
 
-//                return  returnList;
                 return getParent(tempNode);
 //                continue;
             }
@@ -213,19 +191,12 @@ import java.util.*;
                    distanceMap.put(child, newDist);
                    previousMap.put(child,tempNode);
                    //Updating the edge
-	               /**
-	               Edge tempE = edgeTable.get(tempNode+","+child);
-	               tempE.weight = (newDist);
-                   edgeTable.put((tempNode+","+child), tempE);
-	                **/
                    if (didRemove){
                    	    priorityQueue.add(child);
                    }
                }
            }
         }
-
-//        return returnList;
 
         if((distanceMap.get(destnode)) != Integer.MAX_VALUE){
             return getParent(destnode);
@@ -244,15 +215,8 @@ import java.util.*;
 			sHash.add(""+ S.get(i) + "," + S.get(i+1));
 		}
         String sourcenode = String.valueOf(ux) + "," + String.valueOf(uy);
-//        String destnode = String.valueOf(vx) + "," + String.valueOf(vy);
 
-        //Either the source or the dest node aren't in our graph, so no shortest path
-//        if(!graphMap.containsKey(sourcenode) || !graphMap.containsKey(destnode)){
-//        	ArrayList<Integer>
-//            return new ArrayList<Integer>() ;
-//        }
 
-//        ArrayList<Integer> returnList = new ArrayList<Integer>();
 		//edge case S equals v
 //		    if(sHash.contains(sourcenode)) {return getParent(sourcenode);}
        visitedHashSet = new HashSet<>();
@@ -292,14 +256,9 @@ import java.util.*;
         priorityQueue.add(sourcenode);
 
         while(!(priorityQueue.isEmpty())){
-            //pops the lowest vertex off the priority queue
-//           String tempNode = (String)priorityQueue.poll();
             tempNode = (String)priorityQueue.poll();
-//           System.out.println( "tempNode" + tempNode);
-//           System.out.println("tempnode " + tempNode + " dest " + destnode );
 
 	        //TODO find why this works and my initial idea does not
-//            if (tempNode.equals(destnode)){
 	        if (sHash.contains(tempNode)){
 
 //                return  returnList;
@@ -428,7 +387,7 @@ import java.util.*;
 					if(tempDist == null) continue;
 
 					if(tempDist < tempWeight) {
-						//TODO: deep copy
+						// deep copy
 						for(String key: previousMap.keySet()){
 							tempPath.put(key, previousMap.get(key));
 						}
@@ -436,9 +395,6 @@ import java.util.*;
 						end = tempNode;
 						break;
 					}
-//                return  returnList;
-//                  return getParent(tempNode);
-//                continue;
 				}
 
 				//If tempNode does not have a child, continue the loop
@@ -476,7 +432,14 @@ import java.util.*;
 		}
 
 		if(end != "") {
-			previousMap = tempPath;
+
+
+//			System.out.println(tempPath);
+
+			//don't know why commenting this out helped but it did
+//			previousMap = tempPath;
+
+//			System.out.println(previousMap.toString());
 			return getParent(end);
 		}
 //        return returnList;
@@ -490,7 +453,6 @@ import java.util.*;
 		return new ArrayList<Integer>();
 
 	}
-
 
 
 
@@ -545,7 +507,7 @@ import java.util.*;
             //Since they get reversed later, adding them in reverse order
             for(int i = tmpList.length-1; i>=0; i--){
                 String s = tmpList[i];
-                System.out.println(s);
+//                System.out.println(s);
                 returnList.add(Integer.parseInt(s));
             }
 

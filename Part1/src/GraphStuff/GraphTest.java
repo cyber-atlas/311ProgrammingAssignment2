@@ -273,6 +273,7 @@ public class GraphTest {
 		s2.add(4);
 		solution.add(4);
 		solution.add(4);
+//		System.out.println(solution);
 		assertEquals(solution, wg.S2S(s1, s2));
 		long finalTime = System.nanoTime() - start;
 		stosaverage += finalTime;

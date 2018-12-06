@@ -1,4 +1,4 @@
-package GraphStuff;
+//package GraphStuff;
 
 import java.io.*;
 import java.util.*;
@@ -280,7 +280,7 @@ public class ImageProcessor
             path = path.parent;
         }      
     }
-
+/*
     public static void main(String[] args) throws IOException
     {
         ImageProcessor g = new ImageProcessor("image.txt");
@@ -290,4 +290,6 @@ public class ImageProcessor
         g1.writeReduced(9,"testing");
         System.out.println(g1.getImportance());
     }
+
+    */
 }

@@ -26,7 +26,6 @@
 //
 //    }
 //
-//    //TODO quit drinking that dummbfuck juice
 //
 //
 //    //Using the first 2 numbers as strings
