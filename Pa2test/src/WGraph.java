@@ -515,20 +515,6 @@ import java.util.*;
         }
     };
 
-    //TODO optimize this and finish this
-    private List<String> reverse(String start) {
-        Stack<String> s = new Stack<String>();
-        String cur = start;
-        while(cur != null) {
-            s.push(cur);
-            cur = previousMap.get(cur);
-        }
-        List<String> s2 = new ArrayList<String>();
-        while(!s.empty()) {
-            s2.add(s.pop());
-        }
-        return s2;
-    }
 
     private ArrayList<Integer> getParent(String endNode){
         ArrayList<Integer> returnList = new ArrayList<>();
