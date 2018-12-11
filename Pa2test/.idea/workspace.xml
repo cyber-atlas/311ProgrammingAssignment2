@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1ca06f8-6a9a-41da-ae9e-6cf12c9d8809" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WGraph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -10,6 +11,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Pa2test$AllTests_v2sSmallTest2.ic" NAME="AllTests.v2sSmallTest2 Coverage Results" MODIFIED="1544548811591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-882963041">
@@ -35,13 +39,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10223" />
+          <entry key="java" value="11508" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10223" />
+          <entry key="JAVA" value="11508" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -63,8 +67,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/AllTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="428" column="16" selection-start-line="428" selection-start-column="16" selection-end-line="428" selection-end-column="16" />
+                <state relative-caret-position="374">
+                  <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -75,8 +79,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/WGraph.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="532" selection-start-line="532" selection-end-line="532" />
+                <state relative-caret-position="206">
+                  <caret line="538" selection-start-line="538" selection-end-line="538" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#18338#18394#0" />
@@ -153,8 +157,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/WGraph.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1833">
-                  <caret line="517" lean-forward="true" selection-start-line="517" selection-end-line="517" />
+                <state relative-caret-position="453">
+                  <caret line="550" column="6" lean-forward="true" selection-start-line="550" selection-start-column="6" selection-end-line="550" selection-end-column="6" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -184,8 +188,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
-    <option name="width" value="762" />
-    <option name="height" value="966" />
+    <option name="width" value="1522" />
+    <option name="height" value="1932" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -234,7 +238,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544513377024" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544555254638" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -300,6 +304,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AllTests.v2sSmallTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pa2test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AllTests" />
+      <option name="METHOD_NAME" value="v2sSmallTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AllTests.v2sSmallTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pa2test" />
       <option name="PACKAGE_NAME" value="" />
@@ -310,31 +324,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllTests.v2vSmallTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Pa2test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllTests" />
-      <option name="METHOD_NAME" value="v2vSmallTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.AllTests.v2sSmallTest2" />
       <item itemvalue="JUnit.AllTests.s2sLargeTest" />
-      <item itemvalue="JUnit.AllTests.v2vSmallTest1" />
       <item itemvalue="JUnit.AllTests.smallImageTest3" />
       <item itemvalue="JUnit.AllTests.s2sSmallTest2" />
+      <item itemvalue="JUnit.AllTests.v2sSmallTest1" />
+      <item itemvalue="JUnit.AllTests.v2sSmallTest2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AllTests" />
+        <item itemvalue="JUnit.AllTests.v2sSmallTest2" />
+        <item itemvalue="JUnit.AllTests.v2sSmallTest1" />
         <item itemvalue="JUnit.AllTests.s2sSmallTest2" />
         <item itemvalue="JUnit.AllTests.smallImageTest3" />
-        <item itemvalue="JUnit.AllTests.v2vSmallTest1" />
-        <item itemvalue="JUnit.AllTests.v2sSmallTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -352,34 +356,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTests_v2vSmallTest1 - 2018.12.11 at 00h 35m 06s.xml">
-      <configuration name="AllTests.v2vSmallTest1" configurationId="JUnit" />
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 11h 14m 20s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 00h 40m 23s.xml">
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 11h 18m 05s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 11h 18m 33s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 11h 21m 25s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 11h 29m 48s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 11h 32m 08s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.11 at 12h 21m 59s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 00h 44m 06s.xml">
+    <history-entry file="AllTests - 2018.12.11 at 13h 03m 34s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 00h 45m 38s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="AllTests_v2sSmallTest2 - 2018.12.11 at 13h 04m 29s.xml">
+      <configuration name="AllTests.v2sSmallTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 01h 04m 54s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 01h 23m 27s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests_smallImageTest3 - 2018.12.11 at 01h 23m 42s.xml">
-      <configuration name="AllTests.smallImageTest3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 01h 26m 18s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests_s2sSmallTest2 - 2018.12.11 at 01h 27m 20s.xml">
-      <configuration name="AllTests.s2sSmallTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.12.11 at 01h 28m 58s.xml">
+    <history-entry file="AllTests - 2018.12.11 at 13h 06m 02s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -394,7 +398,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -404,7 +407,7 @@
       <window_info id="Learn" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24893314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32897863" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32814372" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32541567" />
@@ -442,6 +445,12 @@
           <line>397</line>
           <properties />
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WGraph.java</url>
+          <line>533</line>
+          <properties />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -533,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/AllTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="428" column="16" selection-start-line="428" selection-start-column="16" selection-end-line="428" selection-end-column="16" />
+        <state relative-caret-position="374">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -543,8 +552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1833">
-          <caret line="517" lean-forward="true" selection-start-line="517" selection-end-line="517" />
+        <state relative-caret-position="453">
+          <caret line="550" column="6" lean-forward="true" selection-start-line="550" selection-start-column="6" selection-end-line="550" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

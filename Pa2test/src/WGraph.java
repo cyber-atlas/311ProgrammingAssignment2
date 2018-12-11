@@ -523,19 +523,16 @@ import java.util.*;
         String nodeBeforeCur = (endNode);
 
 
-	    //TODO testing to save space
+	    //TODO testing with linked list to to save space
 //	    LinkedList<Integer> tempLL = new LinkedList<>();
 
         //While the node before actually has a parent, null after it grabs the source which has no parent
             do{
+
             //Grabs the int value of the previous node
 
             String[] tmpList = nodeBeforeCur.split(",");
 //            System.out.println(tmpList[0]+tmpList[1]);
-
-//            for(String s : tmpList){
-//                returnList.add(Integer.parseInt(s));
-//            }
 
             //Since they get reversed later, adding them in reverse order
             for(int i = tmpList.length-1; i>=0; i--){
@@ -555,6 +552,7 @@ import java.util.*;
 //	    returnList = new ArrayList<Integer>(tempLL);
         Collections.reverse(returnList);
         return returnList;
+//	    return new ArrayList<>(tempLL);
         }
 
         //TODO added helper method
