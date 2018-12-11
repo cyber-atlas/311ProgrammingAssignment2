@@ -29,8 +29,8 @@ public class GraphTest {
 		solution.add(4);
 		solution.add(5);
 		solution.add(6);
-		System.out.println("\n Solution " +solution);
-		System.out.println( "Actual output: "+wg.V2V(1, 2, 5, 6) + "\n" );
+//		System.out.println("\n Solution " +solution);
+//		System.out.println( "Actual output: "+wg.V2V(1, 2, 5, 6) + "\n" );
 		assertEquals(solution, wg.V2V(1, 2, 5, 6));
 		long finalTime = System.nanoTime() - start;
 		vtovaverage += finalTime;
@@ -120,6 +120,16 @@ public class GraphTest {
 		vtovaverage += finalTime;
 	}
 
+	//MY PERSONAL TEST
+//	@Test
+//	void testV2V7() throws IOException {
+//		long start = System.nanoTime();
+//		WGraph wg = new WGraph("example.txt");
+//		ArrayList<Integer> solution = new ArrayList<Integer>();
+//		assertEquals(solution, wg.V2V(1, 2, 1, 2));
+//		long finalTime = System.nanoTime() - start;
+//		vtovaverage += finalTime;
+//	}
 
 
 
