@@ -4,6 +4,7 @@ import org.junit.rules.TestWatcher;
 import org.junit.rules.Timeout;
 import org.junit.runner.Description;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -333,7 +334,6 @@ public class AllTests {
         Assert.assertTrue("Incorrect result for V2S on small graph when the same node is in both sets.", areListsEqual(result, answer));
     }
 
-    @Ignore
     @Test
     public void s2sLargeTest() throws Exception {
         p = 100;
@@ -495,7 +495,12 @@ public class AllTests {
         String input = "resources/image4.txt";
 
         ImageProcessor ip = new ImageProcessor(input);
-        ip.writeReduced(17, OUTPUTFILE);
+        FileWriter fileWriter = new FileWriter(OUTPUTFILE);
+        System.out.println(ip.getImportance());
+//        ArrayList<Pixel> = ip.getImportance();
+//        getImportance();
+        System.out.println();
+//        ip.writeReduced(17, OUTPUTFILE);
 
         ArrayList<ArrayList<Pixel>> answer = readImageFromFile("resources/image4reduced17.txt");
         ArrayList<ArrayList<Pixel>> result = readImageFromFile(OUTPUTFILE);
